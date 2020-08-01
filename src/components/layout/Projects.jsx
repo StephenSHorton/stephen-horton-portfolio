@@ -4,6 +4,8 @@ import firebase from "../../config/firebaseConfig";
 const Projects = () => {
   const [projects, setProjects] = React.useState();
 
+  React.useEffect(() => {}, [projects]);
+
   React.useEffect(() => {
     const firestore = firebase.firestore();
     const projectsRef = firestore.collection("projects");
