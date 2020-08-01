@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const toggleBtnRef = React.createRef();
   return (
     <div
       className="navbar navbar-expand-lg fixed-top navbar-light bg-light"
@@ -13,6 +14,7 @@ const Navbar = () => {
         SH
       </Link>
       <button
+        ref={toggleBtnRef}
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -27,17 +29,29 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarColor03">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link
+              className="nav-link"
+              to="/"
+              onClick={() => toggleBtnRef.current.click()}
+            >
               Home <span className="sr-only">(current)</span>
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/projects">
+            <Link
+              className="nav-link"
+              to="/projects"
+              onClick={() => toggleBtnRef.current.click()}
+            >
               Projects <span className="sr-only">(current)</span>
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact">
+            <Link
+              className="nav-link"
+              to="/contact"
+              onClick={() => toggleBtnRef.current.click()}
+            >
               Contact Me <span className="sr-only">(current)</span>
             </Link>
           </li>
