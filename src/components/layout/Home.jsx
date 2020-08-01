@@ -50,7 +50,7 @@ const Home = () => {
           attitude.
         </p>
         <p className="text-center">
-          <Link to="/contact">See Projects</Link>
+          <Link to="/projects">See Projects</Link>
         </p>
         <p className="text-center">
           <Link to="/contact">Contact me</Link>
