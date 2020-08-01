@@ -17,10 +17,7 @@ const Home = () => {
         </footer>
       </blockquote>
       <div className="profile-pic">
-        <img
-          alt="profile"
-          src="https://scontent-den4-1.xx.fbcdn.net/v/t1.0-9/23905435_1595916657133600_3248570560633096096_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=F4TK8QXBOeQAX_Y_btT&_nc_ht=scontent-den4-1.xx&oh=a6a0c40002263dab0038e702f52cddfd&oe=5F4BFC32"
-        />
+        <img alt="profile" src="https://gdurl.com/llUw" />
       </div>
       <div className="summary">
         <h3 style={{ marginBottom: "20px" }}>
