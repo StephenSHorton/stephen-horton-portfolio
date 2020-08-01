@@ -14,7 +14,7 @@ const ContactMe = () => {
         4stephenhorton@gmail.com
       </h3>
       <a
-        class="btn btn-info"
+        className="btn btn-info"
         href="https://github.com/StephenSHorton"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,7 +27,7 @@ const ContactMe = () => {
         GitHub
       </a>
       <a
-        class="btn btn-info"
+        className="btn btn-info"
         href="https://www.linkedin.com/in/stephenshorton/"
         target="_blank"
         rel="noopener noreferrer"

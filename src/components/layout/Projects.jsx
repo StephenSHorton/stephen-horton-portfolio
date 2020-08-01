@@ -4,8 +4,6 @@ import firebase from "../../config/firebaseConfig";
 const Projects = () => {
   const [projects, setProjects] = React.useState();
 
-  React.useEffect(() => {}, [projects]);
-
   React.useEffect(() => {
     const firestore = firebase.firestore();
     const projectsRef = firestore.collection("projects");
@@ -30,13 +28,7 @@ const Projects = () => {
     if (projects) {
       jsxData = projects.map((project, index) => {
         return (
-          <div
-            key={index}
-            className="card mb-3"
-            style={{
-              margin: "0px 30% 30px 30%",
-            }}
-          >
+          <div key={index} className="card mb-3">
             <h3 className="card-header">
               {project.name ? project.name : "Unavailable"}
             </h3>
